@@ -91,7 +91,7 @@ swedish_endings |>
   guides(fill = "none") +
   labs(title = "Spatial distribution of endings in Swedish place names", 
        subtitle = "Log odds frequency of well-known endings per region (län)\n",
-       caption = "Data: Statistics Sweden (SCB) & Wikipedia | Packages: {tidyverse, tidylo, sf, swemapdata} | Visualization: C. Börstell") +
+       caption = "Data: Statistics Sweden (SCB) & Wikipedia | Packages: {tidyverse, rvest, tidylo, sf, swemapdata} | Visualization: C. Börstell") +
   theme_void(base_size = 15, base_family = "PT Sans Narrow Bold") +
   theme(strip.text = element_text(margin = margin(0, 0, 0, -.5, "mm"), hjust = .5, size = rel(.8)),
         plot.title = element_text(size = rel(1.8), hjust = .5),
@@ -102,6 +102,6 @@ swedish_endings |>
         plot.margin = margin(5, -5, 5, -5, "mm"))
 
 # Save plot
-ggsave("swedish_placenames_wiki.png", width = 7.7, height = 10, units = "in", dpi = 600, bg = "snow")
+ggsave("Downloads/swedish_placenames_wiki.png", width = 7.7, height = 10, units = "in", dpi = 600, bg = "snow")
 
 
